@@ -12,12 +12,12 @@ Danish, not English.
 
 ## Commands
 
-Bun is the package manager (pinned `bun@1.3.14` via `packageManager`; CI uses
+Bun is the package manager (pinned `bun@1.4.2` via `packageManager`; CI uses
 `bun install --frozen-lockfile`).
 
 ```bash
 bun run dev      # dev server on :4321
-bun run check    # astro check — typecheck + content diagnostics
+bun run check    # Astro and Svelte type checks + content diagnostics
 bun run build    # -> dist/
 bun run preview  # serve the built site
 bun run lint     # biome check .   (format + lint, non-writing)
