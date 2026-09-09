@@ -63,7 +63,6 @@ export default defineConfig({
     starlight({
       title: "EDB Pede",
       favicon: "/favicon.svg",
-      tagline: "Hurtige guides til lærere",
       description:
         "Hurtige guides til lærere på Strandgårdskolen og i Ishøj Kommune: login, koder, Chromebook, Google Drev, Skoletube, Meebook og nyttige links.",
       defaultLocale: "root",
