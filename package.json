@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
-    "@biomejs/biome": "2.5.10",
+    "@biomejs/biome": "2.5.12",
     "svelte-check": "4.7.6",
     "typescript": "^6.0.3"
   }
