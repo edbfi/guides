@@ -2,13 +2,13 @@
   "name": "edbpede-guides",
   "type": "module",
   "version": "1.0.0",
-  "description": "Hurtige guides til lærere på Strandgårdskolen og i Ishøj Kommune.",
+  "description": "Hurtige guides til l\u00e6rere p\u00e5 Strandg\u00e5rdskolen og i Ish\u00f8j Kommune.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check",
+    "check": "astro check && bunx --bun svelte-check --tsconfig ./tsconfig.svelte.json",
     "sync": "astro sync",
     "lint": "biome check .",
     "lint:fix": "biome check --write ."
@@ -30,6 +30,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@biomejs/biome": "2.5.10",
+    "svelte-check": "4.7.6",
     "typescript": "^6.0.3"
   }
 }

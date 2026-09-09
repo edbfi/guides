@@ -6,18 +6,18 @@ repository.
 ## Scope
 
 Danish-language Starlight (Astro 7) documentation site for teachers at
-Strandgårdskolen / Ishøj Kommune, deployed to `docs.edbpede.net` via GitHub
+Strandgårdskolen / Ishøj Kommune, deployed to `guides.edb.fi` via GitHub
 Pages. All content, headings and UI strings are Danish — write new content in
 Danish, not English.
 
 ## Commands
 
-Bun is the package manager (pinned `bun@1.3.14` via `packageManager`; CI uses
+Bun is the package manager (pinned `bun@1.4.0` via `packageManager`; CI uses
 `bun install --frozen-lockfile`).
 
 ```bash
 bun run dev      # dev server on :4321
-bun run check    # astro check — typecheck + content diagnostics
+bun run check    # Astro and Svelte type checks + content diagnostics
 bun run build    # -> dist/
 bun run preview  # serve the built site
 bun run lint     # biome check .   (format + lint, non-writing)
@@ -64,7 +64,7 @@ that `/`, `/google-drev/` and `/meebook/` return a `<title>`
 - UnoCSS's reset is disabled in **two** places that must stay in sync:
   `preflights: { reset: false }` in `uno.config.ts` and `injectReset: false` in
   `astro.config.mjs`. Starlight owns the base/reset layer. Note that
-  `.agents/rules/astro-dev-pro.md` recommends `presetWind4({ reset: true })` —
+  `.agents/rules/astro-svelte5-islands.md` recommends `presetWind4({ reset: true })` —
   this repo deliberately differs; do not "fix" it toward the rule file.
 - Svelte islands usually carry their own scoped `<style>` (see
   `Kodeordshjaelper.svelte`). `StepChecklist.svelte` is the exception: its
@@ -83,7 +83,7 @@ that `/`, `/google-drev/` and `/meebook/` return a `<title>`
 
 ## Reference
 
-- `.agents/rules/astro-dev-pro.md` — Astro 7 / Bun / UnoCSS presetWind4 /
+- `.agents/rules/astro-svelte5-islands.md` — Astro 7 / Bun / UnoCSS presetWind4 /
   Svelte 5 runes / SolidJS island conventions, hydration directives and an
   anti-pattern table. Read before writing or editing any component, island, or
   `astro.config.mjs`.

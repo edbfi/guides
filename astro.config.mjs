@@ -55,7 +55,7 @@ const gitbookRedirects = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://docs.edbpede.net",
+  site: "https://guides.edb.fi",
   redirects: gitbookRedirects,
   integrations: [
     UnoCSS({ injectReset: false }),
@@ -97,8 +97,8 @@ export default defineConfig({
       social: [
         {
           icon: "external",
-          label: "yt.edbpede.net",
-          href: "https://yt.edbpede.net",
+          label: "yt.edb.fi",
+          href: "https://yt.edb.fi",
         },
       ],
       // Groups start collapsed so the sidebar stays a short, calm list of
