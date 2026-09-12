@@ -21,4 +21,4 @@ jobs:
         uno.config.ts
         svelte.config.js
       # renovate: datasource=npm depName=bun
-      bun-version: 1.4.0
+      bun-version: 1.4.2
