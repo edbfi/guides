@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: edbfi/automation/actions/dispatch-guard@v1.0.0
+      - uses: edbfi/automation/actions/dispatch-guard@v1.1.1
         with:
           token: ${{ github.token }}
           expected-default-sha: ${{ inputs.expected-default-sha }}
@@ -47,7 +47,7 @@ jobs:
       - name: Build project
         run: bun run build
 
-      - uses: edbfi/automation/actions/dispatch-guard@v1.0.0
+      - uses: edbfi/automation/actions/dispatch-guard@v1.1.1
         with:
           token: ${{ github.token }}
           expected-default-sha: ${{ inputs.expected-default-sha }}
