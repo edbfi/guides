@@ -19,6 +19,12 @@ jobs:
       with:
         name: site-dist
         path: dist/
-    - run: bash .github/scripts/smoke.sh
+    - uses: edbfi/automation/actions/smoke@v3.0.0
+      with:
+        start-command: python3 -m http.server 4321 --bind 127.0.0.1 --directory dist
+        url: http://127.0.0.1:4321/
+        test-command: bash .github/scripts/smoke.sh --assert-only
+        timeout-seconds: 90
+        test-timeout-seconds: 60
     - name: Reject tracked-file mutations
       run: git diff --exit-code HEAD
