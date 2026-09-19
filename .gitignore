@@ -22,3 +22,6 @@ _book
 *.epub
 *.mobi
 *.pdf
+
+# Generated native Svelte checker input
+.svelte-check/

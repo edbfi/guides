@@ -5,5 +5,12 @@
   "automergeStrategy": "rebase",
   "automergeType": "pr",
   "platformAutomerge": false,
-  "ignoreTests": false
+  "ignoreTests": false,
+  "packageRules": [
+    {
+      "description": "Keep direct npm versions exact: post-artifact minimumReleaseAge re-extraction is unavailable (renovatebot/renovate#45284).",
+      "matchManagers": ["npm", "bun"],
+      "rangeStrategy": "pin"
+    }
+  ]
 }
