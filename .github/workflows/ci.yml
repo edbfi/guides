@@ -41,7 +41,7 @@ jobs:
     needs: [guard, quality]
     uses: ./.github/workflows/smoke.yml
   required:
-    name: ci / required
+    name: ci / required-probe
     if: always()
     needs: [guard, quality, smoke]
     runs-on: ubuntu-26.04
