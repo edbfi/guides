@@ -4,7 +4,7 @@
   "automerge": true,
   "automergeStrategy": "rebase",
   "automergeType": "pr",
-  "platformAutomerge": false,
+  "platformAutomerge": true,
   "ignoreTests": false,
   "packageRules": [
     {
