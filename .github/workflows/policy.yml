@@ -7,6 +7,14 @@ on:
 permissions:
   contents: read
   pull-requests: read
+  actions: write
 jobs:
   policy:
-    uses: edbfi/automation/.github/workflows/pr-policy.yml@v3.1.0
+    # Pilot only: the unreleased v4 policy action, pinned to d303390674407256c10bcd92b2a40bf9c70c4c37.
+    name: policy / ci / policy
+    runs-on: ubuntu-26.04
+    timeout-minutes: 5
+    steps:
+      - uses: edbfi/automation/actions/pr-policy@d303390674407256c10bcd92b2a40bf9c70c4c37
+        with:
+          token: ${{ github.token }}
