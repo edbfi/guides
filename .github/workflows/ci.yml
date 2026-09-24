@@ -40,10 +40,15 @@ jobs:
   smoke:
     needs: [guard, quality]
     uses: ./.github/workflows/smoke.yml
+  probe:
+    runs-on: ubuntu-26.04
+    timeout-minutes: 20
+    steps:
+      - run: exit 1
   required:
     name: ci / required
     if: always()
-    needs: [guard, quality, smoke]
+    needs: [guard, quality, smoke, probe]
     runs-on: ubuntu-26.04
     timeout-minutes: 5
     steps:
@@ -56,4 +61,4 @@ jobs:
       - uses: edbfi/automation/actions/gate@v3.0.1
         with:
           needs: ${{ toJSON(needs) }}
-          required: guard quality smoke
+          required: guard quality smoke probe
