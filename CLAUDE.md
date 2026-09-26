@@ -91,7 +91,5 @@ the `LinkCard`s, inline links, and existing redirect targets all hard-code URLs.
   the rest does not apply here: this repo has no shadcn-svelte, Vitest, Playwright, `bun test`,
   Actions, sessions or adapter, and its scripts call `astro …` rather than `bun --bun astro …`. Where
   the two disagree, follow `package.json`.
-- `CI.md`: CI lanes, Renovate automerge and the gated Pages deploy. Read it before editing
-  `.github/`, `renovate.json` or `prek.toml`.
 - `README.md` still mentions SolidJS and `.agents/rules/astro-dev-pro.md`. Solid was removed, and
   the file doesn't exist; the rules file above replaces it.
