@@ -10,16 +10,9 @@ Static Astro 7 + Starlight site of Danish IT guides for teachers, published to h
 - `bun install --frozen-lockfile`, then `bun run dev` (http://localhost:4321)
 - `bun run check`: `astro check`, then `svelte-check` twice (TypeScript 6, then native `--tsgo`) against
   `tsconfig.svelte.json`. All three must pass. The prek pre-push hook runs this too.
-- `bun run lint` / `bun run lint:fix`: Biome. CI runs the read-only `bunx --bun biome ci .`.
+- `bun run lint` / `bun run lint:fix`: Biome. `bunx --bun biome ci .` is the read-only variant.
 - `bun run build`: static output in `dist/`
-- Tests are Python and cover only `.github/scripts/deployment.py` (the deploy gate), not the site:
-  - all: `python3 -B -m unittest discover -s tests -p 'test_*.py'`
-  - one case: `python3 -B -m unittest discover -s tests -p test_deployment.py -k test_current_successful_default_ci`
-- Reproduce CI: `bash .github/scripts/check.sh` (biome ci, unittest, check, build), then
-  `bash .github/scripts/smoke.sh`. It serves `dist/` on port 4321, so keep that port free, and checks
-  that `/`, `/google-drev/` and `/meebook/` return a `<title>`.
-- CI fails if the run changes any tracked file (`git diff --exit-code HEAD`). Run `bun run lint:fix`
-  and commit what it changes.
+- Full local check: `bunx --bun biome ci .`, then `bun run check`, then `bun run build`.
 
 ## Adding a guide
 
