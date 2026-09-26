@@ -32,9 +32,7 @@ function reset(): void {
   <div class="sc">
     <div class="sc__head">
       <span class="sc__title">{title}</span>
-      <span class="sc__count">
-        {doneCount} / {total}
-      </span>
+      <span class="sc__count"> {doneCount} / {total} </span>
     </div>
 
     <div
@@ -56,7 +54,7 @@ function reset(): void {
               class="sc__check"
               checked={checked[index]}
               onchange={() => toggle(index)}
-            />
+            >
             <span>{step}</span>
           </label>
         </li>
@@ -67,9 +65,7 @@ function reset(): void {
       {#if allDone}
         <span class="sc__done-msg">Sådan! Du er igennem alle trin 🎉</span>
       {:else}
-        <button type="button" class="sc__reset" onclick={reset}>
-          Nulstil
-        </button>
+        <button type="button" class="sc__reset" onclick={reset}>Nulstil</button>
       {/if}
     </div>
   </div>

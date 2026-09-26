@@ -53,6 +53,8 @@ the `LinkCard`s, inline links, and existing redirect targets all hard-code URLs.
 
 ## Components and islands
 
+- Biome 2.5.14 enables experimental full Svelte/Astro parsing and formatting, recommended lint rules, and import organization. Keep unused-code checks enabled; `biome.json` defines scoped exclusions. Run `bun run lint:fix`, then `bun run check` after component changes.
+
 - MDX imports use relative paths because no alias is configured: `../../../components/...` from a
   category guide, and one more `../` from nested folders (`skoletube/`, `wevideo/`).
 - Svelte 5 islands (runes only) live in `src/components/islands/`. An island without a `client:*`

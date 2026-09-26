@@ -1,13 +1,18 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.5.14/schema.json",
-  "vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
   "files": {
+    "ignoreUnknown": true,
     "includes": [
       "**",
-      "!**/dist",
+      "!!**/dist",
+      "!!**/.omc",
       "!**/.astro",
-      "!**/.omc",
-      "!**/node_modules",
+      "!**/.svelte-check",
       "!**/assets/**/*.svg",
       "!**/public/**/*.svg"
     ]
@@ -18,18 +23,31 @@
     "indentWidth": 2,
     "lineWidth": 100
   },
-  "assist": { "enabled": true, "actions": { "source": { "preset": "none" } } },
   "linter": {
     "enabled": true,
     "rules": {
-      "preset": "recommended",
-      "correctness": {
-        "noUnusedImports": "off",
-        "noUnusedVariables": "off"
+      "preset": "recommended"
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "preset": "recommended"
       }
     }
   },
   "javascript": {
-    "formatter": { "quoteStyle": "double", "semicolons": "always", "trailingCommas": "all" }
+    "formatter": {
+      "quoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "all"
+    }
+  },
+  "html": {
+    "experimentalFullSupportEnabled": true,
+    "formatter": {
+      "enabled": true
+    }
   }
 }
