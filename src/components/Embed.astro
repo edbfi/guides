@@ -16,40 +16,40 @@ const { url, title = "Videoguide" } = Astro.props;
       title={title}
       loading="lazy"
       allowfullscreen
-      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
   </div>
   <figcaption>
-    Kan du ikke se videoen? <a href={url} target="_blank" rel="noopener"
-      >Åbn videoguiden i et nyt vindue</a
-    >.
+    Kan du ikke se videoen?
+    <a href={url} target="_blank" rel="noopener">Åbn videoguiden i et nyt vindue</a>.
   </figcaption>
 </figure>
 
 <style>
-  .edb-embed {
-    margin: 1.5rem 0;
-  }
-  .edb-embed__frame {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: var(--edb-radius, 0.5rem);
-    overflow: hidden;
-    border: 1px solid var(--sl-color-gray-5);
-    box-shadow: var(--sl-shadow-md);
-    background: var(--sl-color-gray-6);
-  }
-  .edb-embed__frame iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-  .edb-embed figcaption {
-    margin-top: 0.5rem;
-    font-size: var(--sl-text-sm);
-    color: var(--sl-color-gray-3);
-    text-align: center;
-  }
+.edb-embed {
+  margin: 1.5rem 0;
+}
+.edb-embed__frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--edb-radius, 0.5rem);
+  overflow: hidden;
+  border: 1px solid var(--sl-color-gray-5);
+  box-shadow: var(--sl-shadow-md);
+  background: var(--sl-color-gray-6);
+}
+.edb-embed__frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.edb-embed figcaption {
+  margin-top: 0.5rem;
+  font-size: var(--sl-text-sm);
+  color: var(--sl-color-gray-3);
+  text-align: center;
+}
 </style>

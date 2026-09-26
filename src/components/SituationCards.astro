@@ -52,36 +52,32 @@ const situations: Situation[] = [
 ---
 
 <nav class="edb-situations" aria-label="Hvad skal du bruge hjælp til?">
-  {
-    situations.map((s) => (
-      <a
-        class="group flex items-start gap-4 rounded-xl border border-[var(--sl-color-gray-5)] bg-[var(--sl-color-bg-nav)] p-5 no-underline transition-all duration-200 hover:border-[var(--sl-color-accent)] hover:-translate-y-0.5 hover:shadow-md"
-        href={s.href}
-      >
-        <span
-          class="grid place-items-center flex-none w-12 h-12 rounded-lg bg-[var(--edb-brand-soft)] text-2xl"
-          aria-hidden="true"
-        >
-          {s.emoji}
-        </span>
-        <span class="flex flex-col gap-1">
-          <span class="text-base font-semibold text-[var(--sl-color-white)] group-hover:text-[var(--sl-color-accent)]">
-            {s.title}
-          </span>
-          <span class="text-sm leading-snug text-[var(--sl-color-gray-3)]">
-            {s.description}
-          </span>
-        </span>
-      </a>
-    ))
-  }
+  {situations.map((s) => (
+  <a
+    class="group flex items-start gap-4 rounded-xl border border-[var(--sl-color-gray-5)] bg-[var(--sl-color-bg-nav)] p-5 no-underline transition-all duration-200 hover:border-[var(--sl-color-accent)] hover:-translate-y-0.5 hover:shadow-md"
+    href={s.href}
+  >
+    <span
+      class="grid place-items-center flex-none w-12 h-12 rounded-lg bg-[var(--edb-brand-soft)] text-2xl"
+      aria-hidden="true"
+    >
+      {s.emoji}
+    </span>
+    <span class="flex flex-col gap-1">
+      <span class="text-base font-semibold text-[var(--sl-color-white)] group-hover:text-[var(--sl-color-accent)]">
+        {s.title}
+      </span>
+      <span class="text-sm leading-snug text-[var(--sl-color-gray-3)]">{s.description}</span>
+    </span>
+  </a>
+))}
 </nav>
 
 <style>
-  .edb-situations {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
+.edb-situations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
 </style>
