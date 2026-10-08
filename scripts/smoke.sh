@@ -28,6 +28,9 @@ for path in / /google-drev/ /meebook/; do
   fetch "$path"
   title="$(grep -o '<title>[^<]*' "$work/page" | head -1 | cut -c8-)"
   [[ -n "$title" ]] || { echo "SMOKE FAILED: $path served no <title>"; exit 1; }
+  # http.server lists a directory without index.html with a 200 and a title; Pages would 404.
+  [[ -f "dist${path}index.html" && "$title" != "Directory listing"* ]] \
+    || { echo "SMOKE FAILED: $path has no index.html (served: $title)"; exit 1; }
   echo "ok $path: $title"
 done
 
