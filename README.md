@@ -13,6 +13,7 @@ bun install      # installér afhængigheder
 bun run dev      # start udviklingsserver på http://localhost:4321
 bun run check    # Astro/TypeScript-diagnostik
 bun run build    # byg til dist/
+bun run smoke    # røgtest af dist/ (efter build)
 bun run preview  # forhåndsvis det byggede site
 ```
 
