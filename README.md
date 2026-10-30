@@ -46,5 +46,4 @@ public/screens/        Skærmbilleder til guides
 ```
 
 Designet er bygget på tweakcn-temaet "Modern Minimal" som farvegrundlag, udvidet
-med en varm signaturfarve. Kodningsretningslinjer findes i
-`.agents/rules/astro-dev-pro.md`.
+med en varm signaturfarve.
