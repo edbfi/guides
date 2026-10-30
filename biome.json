@@ -8,13 +8,17 @@
   "files": {
     "ignoreUnknown": true,
     "includes": [
-      "**",
+      "**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,json,jsonc,css,svelte,html,astro}",
       "!!**/dist",
       "!!**/.omc",
       "!**/.astro",
       "!**/.svelte-check",
-      "!**/assets/**/*.svg",
-      "!**/public/**/*.svg"
+      "!!.agents/skills",
+      "!!.claude",
+      "!!.codex",
+      "!!.impeccable",
+      "!!.opencode",
+      "!!skills-lock.json"
     ]
   },
   "formatter": {

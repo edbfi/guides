@@ -11,7 +11,7 @@
     "check": "astro check && bunx --bun svelte-check --tsconfig ./tsconfig.svelte.json && bun run check:native",
     "check:native": "bunx --bun svelte-check --tsgo --tsconfig ./tsconfig.svelte.json",
     "sync": "astro sync",
-    "lint": "biome check .",
+    "lint": "bun --bun biome ci",
     "lint:fix": "biome check --write .",
     "smoke": "bash scripts/smoke.sh"
   },
