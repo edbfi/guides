@@ -2,6 +2,7 @@
   "name": "edbpede-guides",
   "type": "module",
   "version": "1.0.0",
+  "license": "AGPL-3.0-or-later",
   "description": "Hurtige guides til l\u00e6rere p\u00e5 Strandg\u00e5rdskolen og i Ish\u00f8j Kommune.",
   "scripts": {
     "dev": "astro dev",

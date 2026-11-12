@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/assets/brand/edbpede.svg" alt="guides logo" width="255" height="256">
+  <img src="src/assets/brand/edbpede.svg" alt="guides logo" width="160" height="161">
 </p>
 
 <h1 align="center">guides</h1>
@@ -7,7 +7,7 @@
 <p align="center"><strong>Hurtige IT-guides til lærere på Strandgårdskolen og i Ishøj Kommune.</strong></p>
 
 <p align="center">
-  <a href="https://github.com/edbfi/guides/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-AGPL--3.0-blue?style=flat" alt="License: AGPL-3.0"></a>
+  <a href="https://github.com/edbfi/guides/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-AGPL--3.0--or--later-blue?style=flat" alt="License: AGPL-3.0-or-later"></a>
   <a href="https://github.com/oven-sh/bun"><img src="https://img.shields.io/badge/Bun-000000?style=flat&amp;logo=bun&amp;logoColor=white" alt="Bun"></a>
   <a href="https://github.com/withastro/astro"><img src="https://img.shields.io/badge/Astro-BC52EE?style=flat&amp;logo=astro&amp;logoColor=white" alt="Astro"></a>
   <a href="https://github.com/withastro/starlight"><img src="https://img.shields.io/badge/Starlight-5F4DEE?style=flat" alt="Starlight"></a>
@@ -61,3 +61,13 @@ public/screens/        Skærmbilleder til guides
 
 Designet er bygget på tweakcn-temaet "Modern Minimal" som farvegrundlag, udvidet
 med en varm signaturfarve.
+
+## Licens
+
+Projektets originale kode udgives under GNU Affero General Public License,
+enten version 3 eller (efter eget valg) enhver senere version
+(`AGPL-3.0-or-later`). Se [LICENSE](LICENSE) for den fulde licenstekst.
+
+Eksisterende licensvilkår og ophavsretlige meddelelser for tredjepartskode,
+afhængigheder og grafik bevares, herunder MIT-licensen for
+PhrozenByte/gh-workflow-immortality-scriptet, som keepalive-workflowet henter.
