@@ -12,6 +12,7 @@
   <a href="https://github.com/withastro/astro"><img src="https://img.shields.io/badge/Astro-BC52EE?style=flat&amp;logo=astro&amp;logoColor=white" alt="Astro"></a>
   <a href="https://github.com/withastro/starlight"><img src="https://img.shields.io/badge/Starlight-5F4DEE?style=flat" alt="Starlight"></a>
   <a href="https://github.com/microsoft/TypeScript"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" alt="TypeScript"></a>
+  <a href="https://github.com/edbfi/guides/actions/workflows/ci.yml?query=branch%3Amain"><img src="https://img.shields.io/github/actions/workflow/status/edbfi/guides/ci.yml?branch=main&amp;event=push&amp;label=CI&amp;style=flat" alt="CI"></a>
 </p>
 
 Hurtige guides til lærere på Strandgårdskolen og i Ishøj Kommune: login, koder,
